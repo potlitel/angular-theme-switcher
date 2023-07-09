@@ -1,28 +1,33 @@
-<div class="container">
-  <header>
-    <div class="menu-items">
-      <i class="fa fa-cog"></i>
+<!-- <div class="container"> -->
+<!-- <header> -->
+<nav class="nav-bar">
+  <div class="container">
+    <input type="checkbox" id="drop-down-cbox" />
+    <label for="drop-down-cbox">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <h1 class="site-logo"><i class="fa fa-cog"></i>Homepage</h1>
+    <ul class="main-nav small-caps">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li>
+        <span>List of Work</span>
+        <ul>
+          <li><a href="#">Codepen</a></li>
+          <li><a href="">Behance</a></li>
+          <li><a href="#">Github</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <!-- <div class="menu-items">
       <a class="menu-item"> Home </a><a class="menu-item"> Articles </a>
       <a class="menu-item"> Tags </a>
       <a class="menu-item"> About Us </a>
-    </div>
+    </div> -->
     <div class="theme-switcher">
-      <!-- <label class="swtich">
-        <input
-          type="checkbox"
-          [checked]="isLightTheme"
-          (change)="onThemeSwitchChange()"
-        />
-      </label> -->
-      <!-- <button
-        class="js__dark-mode-toggle dark-mode-toggle"
-        type="button"
-        (click)="onThemeSwitchChange()"
-      >
-        <span class="dark-mode-toggle__icon"></span>
-        <span class="dark-mode-toggle__text hidden--visually">dark mode</span>
-      </button> -->
-
       <input
         type="checkbox"
         class="checkbox"
@@ -36,8 +41,10 @@
         <span class="ball"></span>
       </label>
     </div>
-  </header>
-  <main>
-    <h1>Angular Theming: Light & Dark Mode</h1>
-  </main>
-</div>
+  </div>
+</nav>
+<!-- </header> -->
+<main>
+  <h1>Angular Theming: Light & Dark Mode</h1>
+</main>
+<!-- </div> -->
