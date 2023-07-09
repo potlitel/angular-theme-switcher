@@ -45,6 +45,15 @@ h1 {
   color: var(--main-content-text-color);
 }
 
+h2,
+p {
+  color: var(--main-content-text-color);
+}
+
+.main-nav {
+  background-color: var(--header-background-color);
+  border-bottom: 1px solid var(--header-border-color);
+}
 .theme-switcher {
 }
 
@@ -412,4 +421,33 @@ li {
   .main-nav li > ul li span {
     background-color: #eee;
   }
+}
+
+.content {
+  text-align: center;
+  margin-top: 6em;
+  background-color: var(--main-content-background-color);
+  border-bottom: 1px solid var(--main-content-background-color);
+  min-height: 100%;
+}
+
+/*  Support me if you like it */
+.support {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  /* background-color: var(--main-content-background-color);
+  border-bottom: 1px solid var(--main-content-background-color); */
+}
+
+.support a {
+  color: #292c35;
+  font-size: 32px;
+  backface-visibility: hidden;
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.support a:hover {
+  transform: scale(1.1);
 }
